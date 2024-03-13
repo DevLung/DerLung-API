@@ -1,0 +1,10 @@
+version: '3'
+
+name: derlung-api
+
+services:
+  node-app:
+    build: .
+    ports:
+      - 3000:3000
+    restart: unless-stopped
