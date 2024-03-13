@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
+    <link rel="stylesheet" href="./styles.css?v=1.0">
+    <script src="./script.js"></script>
+    <link rel="icon" href="./media/favicon.png">
+    <title>DerLung-API</title>
 </head>
 
 <body>
-    <h1>test</h1>
+    <section class="main_content">
+        <header>
+            <h1>DerLung-API</h1>
+        </header>
+
+        <div>
+            <h2><a href="https://api.derlung.com/test">api.derlung.com/test</a></h2>
+            <p>
+                antwortet mit "test response"
+            </p>
+            <section class="main_url_section">
+                <a class="main_url" href="#" onclick="copyUriToClipboard(this, 'https://api.derlung.com/test')">URI kopieren</a>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <section class="socials">
+            <p>Website designed by DerLung</p>
+            <section class="social_icons">
+                <a href="https://github.com/DevLung"><img class="social_icon" src="./media/socials-icons/github-mark-white.png" alt="DevLung - GitHub"></a>
+                <a href="https://www.youtube.com/@DerLung"><img class="social_icon" src="./media/socials-icons/youtube_social_circle.png" alt="DerLungYT - YouTube"></a>
+                <a href="https://twitter.com/DerLungYT"><img class="social_icon" src="./media/socials-icons/X_logo-white.png" alt="DerLungYT - X"></a>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>
+
+
+<!-- endpoint template
+
+        <div>
+            <h2><a href="https://api.derlung.com/ENDPOINT-URI">api.derlung.com/ENDPOINT-URI</a></h2>
+            <p>
+                EXPLAINATION
+            </p>
+            <section class="main_url_section">
+                <a class="main_url" href="#" onclick="copyUriToClipboard(this, 'https://api.derlung.com/ENDPOINT-URI')">URI kopieren</a>
+            </section>
+        </div>
+
+-->

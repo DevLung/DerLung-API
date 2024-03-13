@@ -1,4 +1,143 @@
-h1 {
-    color: red;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 0;
+    margin-inline: 0;
+    background-color: #343a40;
+    color: #ced4da;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+}
+
+.main_content {
+    margin-bottom: 2em;
+}
+
+div {
+    margin: 2em 4em;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #212529;
+}
+
+table {
+    margin-block: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+
+}
+
+thead {
+    border-bottom: 2px solid #495057;
+    text-align: left;
+}
+
+th,
+td {
+    padding-inline: 1em;
+}
+
+.left-header {
+    text-align: right;
+    border-right: 2px solid #495057;
+}
+
+.footnote {
+    font-style: italic;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #00b4d8;
+}
+
+a:visited {
+    color: #0096c7;
+}
+
+a:hover {
+    color: #90e0ef;
+}
+
+a:active {
+    color: #caf0f8;
+}
+
+.main_url_section {
+    display: flex;
+    justify-content: center;
+}
+
+.main_url {
+    display: flex;
+    justify-content: center;
+    padding-block: 2px;
+    width: 120px;
+    margin: 1em;
+    line-height: 35px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #6c757d;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    color: #ced4da;
+    transition: all 0.3s;
+}
+
+.main_url:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 0 0 0.5em 0em black;
+    border-color: #495057;
+    background-color: #495057;
+    color: #ced4da;
+}
+
+.main_url:active {
+    color: #ced4da;
+    transform: scale(0.9);
+}
+
+.main_url:link,
+.main_url:visited {
+    color: #ced4da;
+}
+
+.explaination-image {
+    vertical-align: middle;
+    border-radius: 2px;
+    transition: transform 0.2s;
+}
+
+.explaination-image:hover {
+    transform: scale(var(--image_scale));
+    box-shadow: 0px 0px var(--shadow_scale) black;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #212529;
+    padding: 1em;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social_icons {
+    margin: auto 1em;
+}
+
+.social_icon {
+    margin-inline: 5px;
+    vertical-align: middle;
+    height: 24px;
 }
