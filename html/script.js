@@ -1,4 +1,4 @@
-var copyUriButtonClicked = false;
+let copyUriButtonClicked = false;
 
 function copyUriToClipboard(button, uri) {
     navigator.clipboard.writeText(uri);
