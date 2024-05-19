@@ -51,6 +51,7 @@ td {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:link {
