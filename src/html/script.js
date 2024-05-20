@@ -5,8 +5,8 @@ function copyUriToClipboard(button, uri) {
 
     if (!copyUriButtonClicked) {
         copyUriButtonClicked = true;
-        var initialText = button.innerHTML;
-        var initialColor = button.style.backgroundColor
+        let initialText = button.innerHTML;
+        let initialColor = button.style.backgroundColor
         button.innerHTML = "URI kopiert!";
         button.style.color = "#52b788"
         setTimeout(function () {
