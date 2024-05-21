@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin-block: 0;
     margin-inline: 0;
     background-color: var(--bg-color);
