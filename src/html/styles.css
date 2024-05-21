@@ -200,10 +200,14 @@ a:active {
     color: #e63946;
 }
 
-.scrollable_popup_element {
+.scrollable_container {
     overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.popup_text {
     height: 90%;
-    margin-inline: 1em;
+    padding-inline: 1em;
     text-align: left;
 }
 
