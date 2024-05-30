@@ -1,6 +1,7 @@
 .git/
 .gitignore
 node_modules/
+.vscode/
 *.md
 *.log
 update_prod.bat
