@@ -129,3 +129,5 @@ dist
 
 .vscode/
 update_prod.bat
+# data directory is persistent on server via docker volume
+data/
