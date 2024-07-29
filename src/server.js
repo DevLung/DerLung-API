@@ -52,7 +52,7 @@ app.get(
                 return;
             }
             let jsonData = JSON.parse(data);
-            if (!ajv.validate(jsonData["$schema"], jsonData)) {
+            if (!ajv.validate("https://api.derlung.com/createsmp-version-info/schema", jsonData)) {
                 res.status(500).send({"message": "version info data is invalid"});
                 return;
             }
