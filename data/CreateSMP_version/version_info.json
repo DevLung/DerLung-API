@@ -1,0 +1,8 @@
+{
+  "$schema": "./version_info.schema.json",
+
+  "latestVersion": "1.4.4-beta",
+  "updateType": "needed",
+  "downloadUrl": "https://www.mediafire.com/file/2ad885x9dfnepg6/Create-SMP_1.4.4-beta.mrpack/file",
+  "changelog": ""
+}
