@@ -5,4 +5,10 @@ services:
     build: .
     ports:
       - 3000:3000
+    volumes:
+      - derlung-api-data:/app/data
     restart: unless-stopped
+
+volumes:
+  derlung-api-data:
+    external: true
