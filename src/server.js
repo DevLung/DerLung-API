@@ -32,8 +32,19 @@ app.get(
 const createSmpVersionInfoSchema = JSON.parse(
     readFileSync(path.join(__dirname, createSmpVersionInfoSchemaPath), "utf-8")
 );
+if (!ajv.validateSchema(createSmpVersionInfoSchema)) {
+    throw new Error("Create-SMP version info schema invalid");
+}
 app.get(
-    "/createsmp-version",
+    "/createsmp-version-info/schema",
+    (req, res) => {
+        res.status(200).send(createSmpVersionInfoSchema);
+    }
+);
+
+
+app.get(
+    "/createsmp-version-info",
     (req, res) => {
         readFile(path.join(__dirname, createSmpVersionInfoPath), "utf-8", (error, data) => {
             if (error) {

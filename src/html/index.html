@@ -16,13 +16,27 @@
             <h1>DerLung-API</h1>
         </header>
 
-        <div>
+        <div id="test">
             <h2><a href="https://api.derlung.com/test">/test</a></h2>
+            <code>Content-Type: text/html</code>
             <p>
                 antwortet mit "test response"
             </p>
             <section class="main_url_section">
                 <a class="main_url" onclick="copyUriToClipboard(this, 'https://api.derlung.com/test')">URI kopieren</a>
+            </section>
+        </div>
+
+        <div id="createsmp-version-info">
+            <h2><a href="https://api.derlung.com/createsmp-version-info">/createsmp-version-info</a></h2>
+            <code>Content-Type: application/json</code>
+            <p>
+                antwortet mit Informationen zur neusten Version des Create-SMP Modpacks<br>
+                Die Antwort folgt <a href="https://api.derlung.com/createsmp-version-info/schema">diesem Schema</a>.
+            </p>
+            <section class="main_url_section">
+                <a class="main_url" onclick="copyUriToClipboard(this, 'https://api.derlung.com/createsmp-version-info')">URI kopieren</a>
+                <a class="main_url" onclick="copyUriToClipboard(this, 'https://api.derlung.com/createsmp-version-info/schema')">Schema-URI kopieren</a>
             </section>
         </div>
     </section>
