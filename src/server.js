@@ -12,6 +12,13 @@ const createSmpVersionInfoSchemaPath = "../data/CreateSMP_version/version_info.s
 
 
 
+app.use((req, res, next) => {
+    res.append('Access-Control-Allow-Origin', ['*']);
+    res.append('Access-Control-Allow-Methods', 'GET');
+});
+
+
+
 app.use(express.static(path.join(__dirname, "/html")));
 app.get(
     "/",
