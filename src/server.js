@@ -57,11 +57,13 @@ app.get(
     (req, res) => {
         readFile(path.join(__dirname, createSmpVersionInfoPath), "utf-8", (error, data) => {
             if (error) {
+                res.type("application/problem+json")
                 res.status(500).send({"message": "unable to fetch version info"});
                 return;
             }
             let jsonData = JSON.parse(data);
             if (!ajv.validate(createSmpVersionInfoSchema, jsonData)) {
+                res.type("application/problem+json")
                 res.status(500).send({"message": "version info data is invalid"});
                 return;
             }
