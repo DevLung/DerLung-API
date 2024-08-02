@@ -32,6 +32,7 @@ app.get(
 app.get(
     "/test",
     (req, res) => {
+        res.type("text/plain")
         res.status(200).send("test response");
     }
 );
