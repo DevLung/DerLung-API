@@ -1,3 +1,6 @@
+// import "jquery"; // uncomment while developing for intellisense
+
+
 let copyUriButtonClicked = false;
 
 function copyUriToClipboard(button, uri) {
@@ -15,4 +18,26 @@ function copyUriToClipboard(button, uri) {
             copyUriButtonClicked = false;
         }.bind(button), 1500);
     }
+}
+
+
+function search(inputElement, selector, parentSelector=null) {
+    let searchTerm = jQuery(inputElement).val().toLowerCase();
+    let selection = jQuery(selector);
+    let searchForParent = parentSelector != null;
+
+    if (searchForParent) {
+        selection.parent(parentSelector).show();
+    } else {
+        selection.show();
+    }
+    selection.each(function () {
+        if (jQuery(this).text().toLowerCase().indexOf(searchTerm) == -1) {
+            if (searchForParent) {
+                jQuery(this).parent(parentSelector).hide();
+            } else {
+                jQuery(this).hide();
+            }
+        }
+    });
 }

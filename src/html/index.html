@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
     <link rel="stylesheet" href="./styles.css?v=2.2.1">
-    <script src="./script.js"></script>
     <link rel="icon" href="./media/hotlink-ok/favicon.png?v=2.0.0">
     <title>DerLung-API</title>
 </head>
@@ -16,7 +15,9 @@
             <h1>DerLung-API</h1>
         </header>
 
-        <div id="test">
+        <input type="search" class="div_search" onfocus="this.select()" oninput="search(this, '.endpoint h2 ~ p', '.endpoint')">
+
+        <div class="endpoint" id="test">
             <h2><a href="https://api.derlung.com/test">/test</a></h2>
             <code>Content-Type: text/plain</code>
             <p>
@@ -27,7 +28,7 @@
             </section>
         </div>
 
-        <div id="createsmp-version-info">
+        <div class="endpoint" id="createsmp-version-info">
             <h2><a href="https://api.derlung.com/createsmp-version-info">/createsmp-version-info</a></h2>
             <code>Content-Type: application/json</code>
             <p>
@@ -51,6 +52,9 @@
             </section>
         </section>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js?v=1.1.0"></script>
 </body>
 
 </html>
