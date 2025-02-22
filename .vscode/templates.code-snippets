@@ -1,0 +1,19 @@
+{
+	"add endpoint": {
+		"scope": "html",
+		"prefix": "endpoint",
+		"body": [
+			"<div class=\"endpoint\" id=\"${1:ID}\">",
+			"    <h2><a href=\"https://api.derlung.com/${2:URI}\">/${2:URI}</a></h2>",
+			"    <code>Content-Type: $3</code>",
+			"    <p>",
+			"        ${4:EXPLAINATION}",
+			"    </p>",
+			"    <section class=\"main_url_section\">",
+			"        <a class=\"main_url\" onclick=\"copyUriToClipboard(this, 'https://api.derlung.com/${1:URI}')\">URI kopieren</a>",
+			"    </section>",
+			"</div>$0"
+		],
+		"description": "add an endpoint to documentation"
+	}
+}
